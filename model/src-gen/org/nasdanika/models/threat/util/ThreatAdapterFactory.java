@@ -9,6 +9,12 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
+import org.nasdanika.models.architecture.AbstractElement;
+import org.nasdanika.models.architecture.Element;
+import org.nasdanika.models.architecture.ElementKind;
+
+import org.nasdanika.models.governance.Governed;
+
 import org.nasdanika.models.nxcore.Documented;
 import org.nasdanika.models.nxcore.Marked;
 import org.nasdanika.models.nxcore.ModelElement;
@@ -16,6 +22,8 @@ import org.nasdanika.models.nxcore.Referrable;
 import org.nasdanika.models.nxcore.StringIdentity;
 
 import org.nasdanika.models.threat.*;
+
+import org.nasdanika.models.work.Workable;
 
 /**
  * <!-- begin-user-doc -->
@@ -136,6 +144,26 @@ public class ThreatAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseModelElement(ModelElement object) {
 				return createModelElementAdapter();
+			}
+			@Override
+			public Adapter caseElementKind(ElementKind object) {
+				return createElementKindAdapter();
+			}
+			@Override
+			public Adapter caseGoverned(Governed object) {
+				return createGovernedAdapter();
+			}
+			@Override
+			public Adapter caseWorkable(Workable object) {
+				return createWorkableAdapter();
+			}
+			@Override
+			public Adapter caseAbstractElement(AbstractElement object) {
+				return createAbstractElementAdapter();
+			}
+			@Override
+			public Adapter caseElement(Element object) {
+				return createElementAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -378,6 +406,76 @@ public class ThreatAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createModelElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.architecture.ElementKind <em>Element Kind</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.architecture.ElementKind
+	 * @generated
+	 */
+	public Adapter createElementKindAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.governance.Governed <em>Governed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.governance.Governed
+	 * @generated
+	 */
+	public Adapter createGovernedAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.work.Workable <em>Workable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.work.Workable
+	 * @generated
+	 */
+	public Adapter createWorkableAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.architecture.AbstractElement <em>Abstract Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.architecture.AbstractElement
+	 * @generated
+	 */
+	public Adapter createAbstractElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.architecture.Element <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.architecture.Element
+	 * @generated
+	 */
+	public Adapter createElementAdapter() {
 		return null;
 	}
 

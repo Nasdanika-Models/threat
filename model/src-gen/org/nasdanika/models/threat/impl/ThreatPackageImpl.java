@@ -11,11 +11,19 @@ import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.nasdanika.models.architecture.ArchitecturePackage;
+
 import org.nasdanika.models.governance.GovernancePackage;
+
+import org.nasdanika.models.iam.IamPackage;
+
+import org.nasdanika.models.lifecycle.LifecyclePackage;
 
 import org.nasdanika.models.nxcore.NxcorePackage;
 
 import org.nasdanika.models.role.RolePackage;
+
+import org.nasdanika.models.seal.SealPackage;
 
 import org.nasdanika.models.threat.Asset;
 import org.nasdanika.models.threat.AssetKind;
@@ -31,6 +39,8 @@ import org.nasdanika.models.threat.ThreatPackage;
 import org.nasdanika.models.threat.ThreatStatus;
 import org.nasdanika.models.threat.TrustBoundary;
 import org.nasdanika.models.threat.Weakness;
+
+import org.nasdanika.models.work.WorkPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -172,8 +182,13 @@ public class ThreatPackageImpl extends EPackageImpl implements ThreatPackage {
 		// Initialize simple dependencies
 		NxcorePackage.eINSTANCE.eClass();
 		EcorePackage.eINSTANCE.eClass();
+		ArchitecturePackage.eINSTANCE.eClass();
 		GovernancePackage.eINSTANCE.eClass();
+		WorkPackage.eINSTANCE.eClass();
 		RolePackage.eINSTANCE.eClass();
+		LifecyclePackage.eINSTANCE.eClass();
+		IamPackage.eINSTANCE.eClass();
+		SealPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theThreatPackage.createPackageContents();
@@ -797,6 +812,7 @@ public class ThreatPackageImpl extends EPackageImpl implements ThreatPackage {
 		// Obtain other dependent packages
 		NxcorePackage theNxcorePackage = (NxcorePackage)EPackage.Registry.INSTANCE.getEPackage(NxcorePackage.eNS_URI);
 		EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
+		ArchitecturePackage theArchitecturePackage = (ArchitecturePackage)EPackage.Registry.INSTANCE.getEPackage(ArchitecturePackage.eNS_URI);
 		GovernancePackage theGovernancePackage = (GovernancePackage)EPackage.Registry.INSTANCE.getEPackage(GovernancePackage.eNS_URI);
 
 		// Create type parameters
@@ -806,14 +822,14 @@ public class ThreatPackageImpl extends EPackageImpl implements ThreatPackage {
 		// Add supertypes to classes
 		taxonomyEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 		threatCategoryEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
-		assetKindEClass.getESuperTypes().add(ecorePackage.getEObject());
-		assetEClass.getESuperTypes().add(ecorePackage.getEObject());
+		assetKindEClass.getESuperTypes().add(theArchitecturePackage.getElementKind());
+		assetEClass.getESuperTypes().add(theArchitecturePackage.getElement());
 		flowEClass.getESuperTypes().add(this.getAsset());
 		trustBoundaryEClass.getESuperTypes().add(this.getAsset());
 		threatActorEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 		weaknessEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 		threatEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
-		threatModelEClass.getESuperTypes().add(ecorePackage.getEObject());
+		threatModelEClass.getESuperTypes().add(theGovernancePackage.getGoverned());
 		assumptionEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 
 		// Initialize classes, features, and operations; add parameters

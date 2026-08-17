@@ -11,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import org.nasdanika.models.architecture.impl.ElementImpl;
 
 import org.nasdanika.models.governance.Level;
 
@@ -37,7 +37,7 @@ import org.nasdanika.models.threat.Weakness;
  *
  * @generated
  */
-public class AssetImpl extends EObjectImpl implements Asset {
+public class AssetImpl extends ElementImpl implements Asset {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -65,16 +65,6 @@ public class AssetImpl extends EObjectImpl implements Asset {
 	@Override
 	protected EClass eStaticClass() {
 		return ThreatPackage.Literals.ASSET;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**

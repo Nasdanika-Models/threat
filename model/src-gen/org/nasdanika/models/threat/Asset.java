@@ -4,7 +4,7 @@ package org.nasdanika.models.threat;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.models.architecture.Element;
 
 import org.nasdanika.models.governance.Level;
 
@@ -27,10 +27,10 @@ import org.nasdanika.models.governance.Level;
  * </ul>
  *
  * @see org.nasdanika.models.threat.ThreatPackage#getAsset()
- * @model superTypes="org.eclipse.emf.ecore.EJavaObject"
+ * @model
  * @generated
  */
-public interface Asset extends EObject {
+public interface Asset extends Element {
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.nasdanika.models.governance.Level}.

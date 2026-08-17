@@ -11,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import org.nasdanika.models.governance.impl.GovernedImpl;
 
 import org.nasdanika.models.threat.Asset;
 import org.nasdanika.models.threat.AssetKind;
@@ -41,7 +41,7 @@ import org.nasdanika.models.threat.ThreatPackage;
  *
  * @generated
  */
-public class ThreatModelImpl extends EObjectImpl implements ThreatModel {
+public class ThreatModelImpl extends GovernedImpl implements ThreatModel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,16 +59,6 @@ public class ThreatModelImpl extends EObjectImpl implements ThreatModel {
 	@Override
 	protected EClass eStaticClass() {
 		return ThreatPackage.Literals.THREAT_MODEL;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**

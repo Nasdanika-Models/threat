@@ -4,7 +4,7 @@ package org.nasdanika.models.threat;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.models.architecture.ElementKind;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see org.nasdanika.models.threat.ThreatPackage#getAssetKind()
- * @model superTypes="org.eclipse.emf.ecore.EJavaObject"
+ * @model
  * @generated
  */
-public interface AssetKind extends EObject {
+public interface AssetKind extends ElementKind {
 	/**
 	 * Returns the value of the '<em><b>Default Threats</b></em>' containment reference list.
 	 * The list contents are of type {@link org.nasdanika.models.threat.Threat}.

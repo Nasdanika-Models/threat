@@ -7,7 +7,10 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EcorePackage;
+
+import org.nasdanika.models.architecture.ArchitecturePackage;
+
+import org.nasdanika.models.governance.GovernancePackage;
 
 import org.nasdanika.models.nxcore.NxcorePackage;
 
@@ -381,13 +384,103 @@ public interface ThreatPackage extends EPackage {
 	int ASSET_KIND = 2;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__ID = ArchitecturePackage.ELEMENT_KIND__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__DOCUMENTATION = ArchitecturePackage.ELEMENT_KIND__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__DOC_REF = ArchitecturePackage.ELEMENT_KIND__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__DOC_FORMAT = ArchitecturePackage.ELEMENT_KIND__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__DOC_CONTENTS = ArchitecturePackage.ELEMENT_KIND__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__DOC_SECTIONS = ArchitecturePackage.ELEMENT_KIND__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__MARKERS = ArchitecturePackage.ELEMENT_KIND__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__ICON = ArchitecturePackage.ELEMENT_KIND__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__URIS = ArchitecturePackage.ELEMENT_KIND__URIS;
+
+	/**
+	 * The feature id for the '<em><b>Super Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_KIND__SUPER_TYPE = ArchitecturePackage.ELEMENT_KIND__SUPER_TYPE;
+
+	/**
 	 * The feature id for the '<em><b>Default Threats</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_KIND__DEFAULT_THREATS = EcorePackage.EOBJECT_FEATURE_COUNT + 0;
+	int ASSET_KIND__DEFAULT_THREATS = ArchitecturePackage.ELEMENT_KIND_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Asset Kind</em>' class.
@@ -396,142 +489,25 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_KIND_FEATURE_COUNT = EcorePackage.EOBJECT_FEATURE_COUNT + 1;
+	int ASSET_KIND_FEATURE_COUNT = ArchitecturePackage.ELEMENT_KIND_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>EClass</em>' operation.
+	 * The operation id for the '<em>Collect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_KIND___ECLASS = EcorePackage.EOBJECT___ECLASS;
+	int ASSET_KIND___COLLECT__OBJECT_EREFERENCE_ELIST = ArchitecturePackage.ELEMENT_KIND___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
-	 * The operation id for the '<em>EIs Proxy</em>' operation.
+	 * The operation id for the '<em>Get Referrers</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_KIND___EIS_PROXY = EcorePackage.EOBJECT___EIS_PROXY;
-
-	/**
-	 * The operation id for the '<em>EResource</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ERESOURCE = EcorePackage.EOBJECT___ERESOURCE;
-
-	/**
-	 * The operation id for the '<em>EContainer</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ECONTAINER = EcorePackage.EOBJECT___ECONTAINER;
-
-	/**
-	 * The operation id for the '<em>EContaining Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ECONTAINING_FEATURE = EcorePackage.EOBJECT___ECONTAINING_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContainment Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ECONTAINMENT_FEATURE = EcorePackage.EOBJECT___ECONTAINMENT_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ECONTENTS = EcorePackage.EOBJECT___ECONTENTS;
-
-	/**
-	 * The operation id for the '<em>EAll Contents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EALL_CONTENTS = EcorePackage.EOBJECT___EALL_CONTENTS;
-
-	/**
-	 * The operation id for the '<em>ECross References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ECROSS_REFERENCES = EcorePackage.EOBJECT___ECROSS_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EGET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EGET__ESTRUCTURALFEATURE_BOOLEAN = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>ESet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___ESET__ESTRUCTURALFEATURE_OBJECT = EcorePackage.EOBJECT___ESET__ESTRUCTURALFEATURE_OBJECT;
-
-	/**
-	 * The operation id for the '<em>EIs Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EIS_SET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EIS_SET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EUnset</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EUNSET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EUNSET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EInvoke</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_KIND___EINVOKE__EOPERATION_ELIST = EcorePackage.EOBJECT___EINVOKE__EOPERATION_ELIST;
+	int ASSET_KIND___GET_REFERRERS__EREFERENCE = ArchitecturePackage.ELEMENT_KIND___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Asset Kind</em>' class.
@@ -540,7 +516,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_KIND_OPERATION_COUNT = EcorePackage.EOBJECT_OPERATION_COUNT + 0;
+	int ASSET_KIND_OPERATION_COUNT = ArchitecturePackage.ELEMENT_KIND_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.threat.impl.AssetImpl <em>Asset</em>}' class.
@@ -553,13 +529,157 @@ public interface ThreatPackage extends EPackage {
 	int ASSET = 3;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__ID = ArchitecturePackage.ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__DOCUMENTATION = ArchitecturePackage.ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__DOC_REF = ArchitecturePackage.ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__DOC_FORMAT = ArchitecturePackage.ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__DOC_CONTENTS = ArchitecturePackage.ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__DOC_SECTIONS = ArchitecturePackage.ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__MARKERS = ArchitecturePackage.ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__ICON = ArchitecturePackage.ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__URIS = ArchitecturePackage.ELEMENT__URIS;
+
+	/**
+	 * The feature id for the '<em><b>Control Applications</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__CONTROL_APPLICATIONS = ArchitecturePackage.ELEMENT__CONTROL_APPLICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Risks</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__RISKS = ArchitecturePackage.ELEMENT__RISKS;
+
+	/**
+	 * The feature id for the '<em><b>Waivers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__WAIVERS = ArchitecturePackage.ELEMENT__WAIVERS;
+
+	/**
+	 * The feature id for the '<em><b>Work</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__WORK = ArchitecturePackage.ELEMENT__WORK;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing Relationships</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__OUTGOING_RELATIONSHIPS = ArchitecturePackage.ELEMENT__OUTGOING_RELATIONSHIPS;
+
+	/**
+	 * The feature id for the '<em><b>Kind</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__KIND = ArchitecturePackage.ELEMENT__KIND;
+
+	/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET__ELEMENTS = ArchitecturePackage.ELEMENT__ELEMENTS;
+
+	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET__VALUE = EcorePackage.EOBJECT_FEATURE_COUNT + 0;
+	int ASSET__VALUE = ArchitecturePackage.ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Threats</b></em>' containment reference list.
@@ -568,7 +688,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET__THREATS = EcorePackage.EOBJECT_FEATURE_COUNT + 1;
+	int ASSET__THREATS = ArchitecturePackage.ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Weaknesses</b></em>' containment reference list.
@@ -577,7 +697,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET__WEAKNESSES = EcorePackage.EOBJECT_FEATURE_COUNT + 2;
+	int ASSET__WEAKNESSES = ArchitecturePackage.ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Asset</em>' class.
@@ -586,142 +706,25 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_FEATURE_COUNT = EcorePackage.EOBJECT_FEATURE_COUNT + 3;
+	int ASSET_FEATURE_COUNT = ArchitecturePackage.ELEMENT_FEATURE_COUNT + 3;
 
 	/**
-	 * The operation id for the '<em>EClass</em>' operation.
+	 * The operation id for the '<em>Collect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET___ECLASS = EcorePackage.EOBJECT___ECLASS;
+	int ASSET___COLLECT__OBJECT_EREFERENCE_ELIST = ArchitecturePackage.ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
-	 * The operation id for the '<em>EIs Proxy</em>' operation.
+	 * The operation id for the '<em>Get Referrers</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET___EIS_PROXY = EcorePackage.EOBJECT___EIS_PROXY;
-
-	/**
-	 * The operation id for the '<em>EResource</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ERESOURCE = EcorePackage.EOBJECT___ERESOURCE;
-
-	/**
-	 * The operation id for the '<em>EContainer</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ECONTAINER = EcorePackage.EOBJECT___ECONTAINER;
-
-	/**
-	 * The operation id for the '<em>EContaining Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ECONTAINING_FEATURE = EcorePackage.EOBJECT___ECONTAINING_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContainment Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ECONTAINMENT_FEATURE = EcorePackage.EOBJECT___ECONTAINMENT_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ECONTENTS = EcorePackage.EOBJECT___ECONTENTS;
-
-	/**
-	 * The operation id for the '<em>EAll Contents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EALL_CONTENTS = EcorePackage.EOBJECT___EALL_CONTENTS;
-
-	/**
-	 * The operation id for the '<em>ECross References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ECROSS_REFERENCES = EcorePackage.EOBJECT___ECROSS_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EGET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EGET__ESTRUCTURALFEATURE_BOOLEAN = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>ESet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___ESET__ESTRUCTURALFEATURE_OBJECT = EcorePackage.EOBJECT___ESET__ESTRUCTURALFEATURE_OBJECT;
-
-	/**
-	 * The operation id for the '<em>EIs Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EIS_SET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EIS_SET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EUnset</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EUNSET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EUNSET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EInvoke</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET___EINVOKE__EOPERATION_ELIST = EcorePackage.EOBJECT___EINVOKE__EOPERATION_ELIST;
+	int ASSET___GET_REFERRERS__EREFERENCE = ArchitecturePackage.ELEMENT___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Asset</em>' class.
@@ -730,7 +733,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ASSET_OPERATION_COUNT = EcorePackage.EOBJECT_OPERATION_COUNT + 0;
+	int ASSET_OPERATION_COUNT = ArchitecturePackage.ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.threat.impl.FlowImpl <em>Flow</em>}' class.
@@ -741,6 +744,150 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 */
 	int FLOW = 4;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__ID = ASSET__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__DOCUMENTATION = ASSET__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__DOC_REF = ASSET__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__DOC_FORMAT = ASSET__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__DOC_CONTENTS = ASSET__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__DOC_SECTIONS = ASSET__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__MARKERS = ASSET__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__ICON = ASSET__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__URIS = ASSET__URIS;
+
+	/**
+	 * The feature id for the '<em><b>Control Applications</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__CONTROL_APPLICATIONS = ASSET__CONTROL_APPLICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Risks</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__RISKS = ASSET__RISKS;
+
+	/**
+	 * The feature id for the '<em><b>Waivers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__WAIVERS = ASSET__WAIVERS;
+
+	/**
+	 * The feature id for the '<em><b>Work</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__WORK = ASSET__WORK;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing Relationships</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__OUTGOING_RELATIONSHIPS = ASSET__OUTGOING_RELATIONSHIPS;
+
+	/**
+	 * The feature id for the '<em><b>Kind</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__KIND = ASSET__KIND;
+
+	/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW__ELEMENTS = ASSET__ELEMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -815,139 +962,22 @@ public interface ThreatPackage extends EPackage {
 	int FLOW_FEATURE_COUNT = ASSET_FEATURE_COUNT + 4;
 
 	/**
-	 * The operation id for the '<em>EClass</em>' operation.
+	 * The operation id for the '<em>Collect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW___ECLASS = ASSET___ECLASS;
+	int FLOW___COLLECT__OBJECT_EREFERENCE_ELIST = ASSET___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
-	 * The operation id for the '<em>EIs Proxy</em>' operation.
+	 * The operation id for the '<em>Get Referrers</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOW___EIS_PROXY = ASSET___EIS_PROXY;
-
-	/**
-	 * The operation id for the '<em>EResource</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ERESOURCE = ASSET___ERESOURCE;
-
-	/**
-	 * The operation id for the '<em>EContainer</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ECONTAINER = ASSET___ECONTAINER;
-
-	/**
-	 * The operation id for the '<em>EContaining Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ECONTAINING_FEATURE = ASSET___ECONTAINING_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContainment Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ECONTAINMENT_FEATURE = ASSET___ECONTAINMENT_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ECONTENTS = ASSET___ECONTENTS;
-
-	/**
-	 * The operation id for the '<em>EAll Contents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EALL_CONTENTS = ASSET___EALL_CONTENTS;
-
-	/**
-	 * The operation id for the '<em>ECross References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ECROSS_REFERENCES = ASSET___ECROSS_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EGET__ESTRUCTURALFEATURE = ASSET___EGET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EGET__ESTRUCTURALFEATURE_BOOLEAN = ASSET___EGET__ESTRUCTURALFEATURE_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>ESet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___ESET__ESTRUCTURALFEATURE_OBJECT = ASSET___ESET__ESTRUCTURALFEATURE_OBJECT;
-
-	/**
-	 * The operation id for the '<em>EIs Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EIS_SET__ESTRUCTURALFEATURE = ASSET___EIS_SET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EUnset</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EUNSET__ESTRUCTURALFEATURE = ASSET___EUNSET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EInvoke</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW___EINVOKE__EOPERATION_ELIST = ASSET___EINVOKE__EOPERATION_ELIST;
+	int FLOW___GET_REFERRERS__EREFERENCE = ASSET___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Flow</em>' class.
@@ -967,6 +997,150 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 */
 	int TRUST_BOUNDARY = 5;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__ID = ASSET__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__DOCUMENTATION = ASSET__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__DOC_REF = ASSET__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__DOC_FORMAT = ASSET__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__DOC_CONTENTS = ASSET__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__DOC_SECTIONS = ASSET__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__MARKERS = ASSET__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__ICON = ASSET__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__URIS = ASSET__URIS;
+
+	/**
+	 * The feature id for the '<em><b>Control Applications</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__CONTROL_APPLICATIONS = ASSET__CONTROL_APPLICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Risks</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__RISKS = ASSET__RISKS;
+
+	/**
+	 * The feature id for the '<em><b>Waivers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__WAIVERS = ASSET__WAIVERS;
+
+	/**
+	 * The feature id for the '<em><b>Work</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__WORK = ASSET__WORK;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing Relationships</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__OUTGOING_RELATIONSHIPS = ASSET__OUTGOING_RELATIONSHIPS;
+
+	/**
+	 * The feature id for the '<em><b>Kind</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__KIND = ASSET__KIND;
+
+	/**
+	 * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUST_BOUNDARY__ELEMENTS = ASSET__ELEMENTS;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1014,139 +1188,22 @@ public interface ThreatPackage extends EPackage {
 	int TRUST_BOUNDARY_FEATURE_COUNT = ASSET_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>EClass</em>' operation.
+	 * The operation id for the '<em>Collect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRUST_BOUNDARY___ECLASS = ASSET___ECLASS;
+	int TRUST_BOUNDARY___COLLECT__OBJECT_EREFERENCE_ELIST = ASSET___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
-	 * The operation id for the '<em>EIs Proxy</em>' operation.
+	 * The operation id for the '<em>Get Referrers</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRUST_BOUNDARY___EIS_PROXY = ASSET___EIS_PROXY;
-
-	/**
-	 * The operation id for the '<em>EResource</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ERESOURCE = ASSET___ERESOURCE;
-
-	/**
-	 * The operation id for the '<em>EContainer</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ECONTAINER = ASSET___ECONTAINER;
-
-	/**
-	 * The operation id for the '<em>EContaining Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ECONTAINING_FEATURE = ASSET___ECONTAINING_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContainment Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ECONTAINMENT_FEATURE = ASSET___ECONTAINMENT_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ECONTENTS = ASSET___ECONTENTS;
-
-	/**
-	 * The operation id for the '<em>EAll Contents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EALL_CONTENTS = ASSET___EALL_CONTENTS;
-
-	/**
-	 * The operation id for the '<em>ECross References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ECROSS_REFERENCES = ASSET___ECROSS_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EGET__ESTRUCTURALFEATURE = ASSET___EGET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EGET__ESTRUCTURALFEATURE_BOOLEAN = ASSET___EGET__ESTRUCTURALFEATURE_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>ESet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___ESET__ESTRUCTURALFEATURE_OBJECT = ASSET___ESET__ESTRUCTURALFEATURE_OBJECT;
-
-	/**
-	 * The operation id for the '<em>EIs Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EIS_SET__ESTRUCTURALFEATURE = ASSET___EIS_SET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EUnset</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EUNSET__ESTRUCTURALFEATURE = ASSET___EUNSET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EInvoke</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRUST_BOUNDARY___EINVOKE__EOPERATION_ELIST = ASSET___EINVOKE__EOPERATION_ELIST;
+	int TRUST_BOUNDARY___GET_REFERRERS__EREFERENCE = ASSET___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Trust Boundary</em>' class.
@@ -1684,13 +1741,121 @@ public interface ThreatPackage extends EPackage {
 	int THREAT_MODEL = 9;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__ID = GovernancePackage.GOVERNED__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__DOCUMENTATION = GovernancePackage.GOVERNED__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__DOC_REF = GovernancePackage.GOVERNED__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__DOC_FORMAT = GovernancePackage.GOVERNED__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__DOC_CONTENTS = GovernancePackage.GOVERNED__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__DOC_SECTIONS = GovernancePackage.GOVERNED__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__MARKERS = GovernancePackage.GOVERNED__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__ICON = GovernancePackage.GOVERNED__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__URIS = GovernancePackage.GOVERNED__URIS;
+
+	/**
+	 * The feature id for the '<em><b>Control Applications</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__CONTROL_APPLICATIONS = GovernancePackage.GOVERNED__CONTROL_APPLICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Risks</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__RISKS = GovernancePackage.GOVERNED__RISKS;
+
+	/**
+	 * The feature id for the '<em><b>Waivers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREAT_MODEL__WAIVERS = GovernancePackage.GOVERNED__WAIVERS;
+
+	/**
 	 * The feature id for the '<em><b>Taxonomies</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__TAXONOMIES = EcorePackage.EOBJECT_FEATURE_COUNT + 0;
+	int THREAT_MODEL__TAXONOMIES = GovernancePackage.GOVERNED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Kinds</b></em>' containment reference list.
@@ -1699,7 +1864,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__KINDS = EcorePackage.EOBJECT_FEATURE_COUNT + 1;
+	int THREAT_MODEL__KINDS = GovernancePackage.GOVERNED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Actors</b></em>' containment reference list.
@@ -1708,7 +1873,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__ACTORS = EcorePackage.EOBJECT_FEATURE_COUNT + 2;
+	int THREAT_MODEL__ACTORS = GovernancePackage.GOVERNED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Assets</b></em>' containment reference list.
@@ -1717,7 +1882,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__ASSETS = EcorePackage.EOBJECT_FEATURE_COUNT + 3;
+	int THREAT_MODEL__ASSETS = GovernancePackage.GOVERNED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Scope</b></em>' reference list.
@@ -1726,7 +1891,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__SCOPE = EcorePackage.EOBJECT_FEATURE_COUNT + 4;
+	int THREAT_MODEL__SCOPE = GovernancePackage.GOVERNED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Assumptions</b></em>' containment reference list.
@@ -1735,7 +1900,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL__ASSUMPTIONS = EcorePackage.EOBJECT_FEATURE_COUNT + 5;
+	int THREAT_MODEL__ASSUMPTIONS = GovernancePackage.GOVERNED_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Model</em>' class.
@@ -1744,142 +1909,25 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL_FEATURE_COUNT = EcorePackage.EOBJECT_FEATURE_COUNT + 6;
+	int THREAT_MODEL_FEATURE_COUNT = GovernancePackage.GOVERNED_FEATURE_COUNT + 6;
 
 	/**
-	 * The operation id for the '<em>EClass</em>' operation.
+	 * The operation id for the '<em>Collect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL___ECLASS = EcorePackage.EOBJECT___ECLASS;
+	int THREAT_MODEL___COLLECT__OBJECT_EREFERENCE_ELIST = GovernancePackage.GOVERNED___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
-	 * The operation id for the '<em>EIs Proxy</em>' operation.
+	 * The operation id for the '<em>Get Referrers</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL___EIS_PROXY = EcorePackage.EOBJECT___EIS_PROXY;
-
-	/**
-	 * The operation id for the '<em>EResource</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ERESOURCE = EcorePackage.EOBJECT___ERESOURCE;
-
-	/**
-	 * The operation id for the '<em>EContainer</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ECONTAINER = EcorePackage.EOBJECT___ECONTAINER;
-
-	/**
-	 * The operation id for the '<em>EContaining Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ECONTAINING_FEATURE = EcorePackage.EOBJECT___ECONTAINING_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContainment Feature</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ECONTAINMENT_FEATURE = EcorePackage.EOBJECT___ECONTAINMENT_FEATURE;
-
-	/**
-	 * The operation id for the '<em>EContents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ECONTENTS = EcorePackage.EOBJECT___ECONTENTS;
-
-	/**
-	 * The operation id for the '<em>EAll Contents</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EALL_CONTENTS = EcorePackage.EOBJECT___EALL_CONTENTS;
-
-	/**
-	 * The operation id for the '<em>ECross References</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ECROSS_REFERENCES = EcorePackage.EOBJECT___ECROSS_REFERENCES;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EGET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EGet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EGET__ESTRUCTURALFEATURE_BOOLEAN = EcorePackage.EOBJECT___EGET__ESTRUCTURALFEATURE_BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>ESet</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___ESET__ESTRUCTURALFEATURE_OBJECT = EcorePackage.EOBJECT___ESET__ESTRUCTURALFEATURE_OBJECT;
-
-	/**
-	 * The operation id for the '<em>EIs Set</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EIS_SET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EIS_SET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EUnset</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EUNSET__ESTRUCTURALFEATURE = EcorePackage.EOBJECT___EUNSET__ESTRUCTURALFEATURE;
-
-	/**
-	 * The operation id for the '<em>EInvoke</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int THREAT_MODEL___EINVOKE__EOPERATION_ELIST = EcorePackage.EOBJECT___EINVOKE__EOPERATION_ELIST;
+	int THREAT_MODEL___GET_REFERRERS__EREFERENCE = GovernancePackage.GOVERNED___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Model</em>' class.
@@ -1888,7 +1936,7 @@ public interface ThreatPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THREAT_MODEL_OPERATION_COUNT = EcorePackage.EOBJECT_OPERATION_COUNT + 0;
+	int THREAT_MODEL_OPERATION_COUNT = GovernancePackage.GOVERNED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.threat.impl.AssumptionImpl <em>Assumption</em>}' class.

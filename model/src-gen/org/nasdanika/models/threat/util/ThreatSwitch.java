@@ -7,6 +7,12 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
+import org.nasdanika.models.architecture.AbstractElement;
+import org.nasdanika.models.architecture.Element;
+import org.nasdanika.models.architecture.ElementKind;
+
+import org.nasdanika.models.governance.Governed;
+
 import org.nasdanika.models.nxcore.Documented;
 import org.nasdanika.models.nxcore.Marked;
 import org.nasdanika.models.nxcore.ModelElement;
@@ -14,6 +20,8 @@ import org.nasdanika.models.nxcore.Referrable;
 import org.nasdanika.models.nxcore.StringIdentity;
 
 import org.nasdanika.models.threat.*;
+
+import org.nasdanika.models.work.Workable;
 
 /**
  * <!-- begin-user-doc -->
@@ -97,12 +105,27 @@ public class ThreatSwitch<T> extends Switch<T> {
 			case ThreatPackage.ASSET_KIND: {
 				AssetKind assetKind = (AssetKind)theEObject;
 				T result = caseAssetKind(assetKind);
+				if (result == null) result = caseElementKind(assetKind);
+				if (result == null) result = caseModelElement(assetKind);
+				if (result == null) result = caseStringIdentity(assetKind);
+				if (result == null) result = caseDocumented(assetKind);
+				if (result == null) result = caseMarked(assetKind);
+				if (result == null) result = caseReferrable(assetKind);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ThreatPackage.ASSET: {
 				Asset asset = (Asset)theEObject;
 				T result = caseAsset(asset);
+				if (result == null) result = caseElement(asset);
+				if (result == null) result = caseAbstractElement(asset);
+				if (result == null) result = caseWorkable(asset);
+				if (result == null) result = caseGoverned(asset);
+				if (result == null) result = caseModelElement(asset);
+				if (result == null) result = caseStringIdentity(asset);
+				if (result == null) result = caseDocumented(asset);
+				if (result == null) result = caseMarked(asset);
+				if (result == null) result = caseReferrable(asset);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -110,6 +133,15 @@ public class ThreatSwitch<T> extends Switch<T> {
 				Flow flow = (Flow)theEObject;
 				T result = caseFlow(flow);
 				if (result == null) result = caseAsset(flow);
+				if (result == null) result = caseElement(flow);
+				if (result == null) result = caseAbstractElement(flow);
+				if (result == null) result = caseWorkable(flow);
+				if (result == null) result = caseGoverned(flow);
+				if (result == null) result = caseModelElement(flow);
+				if (result == null) result = caseStringIdentity(flow);
+				if (result == null) result = caseDocumented(flow);
+				if (result == null) result = caseMarked(flow);
+				if (result == null) result = caseReferrable(flow);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -117,6 +149,15 @@ public class ThreatSwitch<T> extends Switch<T> {
 				TrustBoundary trustBoundary = (TrustBoundary)theEObject;
 				T result = caseTrustBoundary(trustBoundary);
 				if (result == null) result = caseAsset(trustBoundary);
+				if (result == null) result = caseElement(trustBoundary);
+				if (result == null) result = caseAbstractElement(trustBoundary);
+				if (result == null) result = caseWorkable(trustBoundary);
+				if (result == null) result = caseGoverned(trustBoundary);
+				if (result == null) result = caseModelElement(trustBoundary);
+				if (result == null) result = caseStringIdentity(trustBoundary);
+				if (result == null) result = caseDocumented(trustBoundary);
+				if (result == null) result = caseMarked(trustBoundary);
+				if (result == null) result = caseReferrable(trustBoundary);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -156,6 +197,12 @@ public class ThreatSwitch<T> extends Switch<T> {
 			case ThreatPackage.THREAT_MODEL: {
 				ThreatModel threatModel = (ThreatModel)theEObject;
 				T result = caseThreatModel(threatModel);
+				if (result == null) result = caseGoverned(threatModel);
+				if (result == null) result = caseModelElement(threatModel);
+				if (result == null) result = caseStringIdentity(threatModel);
+				if (result == null) result = caseDocumented(threatModel);
+				if (result == null) result = caseMarked(threatModel);
+				if (result == null) result = caseReferrable(threatModel);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -411,6 +458,81 @@ public class ThreatSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseModelElement(ModelElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Element Kind</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element Kind</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseElementKind(ElementKind object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Governed</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Governed</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGoverned(Governed object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Workable</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Workable</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseWorkable(Workable object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abstract Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abstract Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbstractElement(AbstractElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseElement(Element object) {
 		return null;
 	}
 

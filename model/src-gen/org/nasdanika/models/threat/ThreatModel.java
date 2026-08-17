@@ -4,7 +4,7 @@ package org.nasdanika.models.threat;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
+import org.nasdanika.models.governance.Governed;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,10 +28,10 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see org.nasdanika.models.threat.ThreatPackage#getThreatModel()
- * @model superTypes="org.eclipse.emf.ecore.EJavaObject"
+ * @model
  * @generated
  */
-public interface ThreatModel extends EObject {
+public interface ThreatModel extends Governed {
 	/**
 	 * Returns the value of the '<em><b>Taxonomies</b></em>' containment reference list.
 	 * The list contents are of type {@link org.nasdanika.models.threat.Taxonomy}.

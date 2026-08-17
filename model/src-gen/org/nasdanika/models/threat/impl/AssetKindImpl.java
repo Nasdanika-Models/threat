@@ -11,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import org.nasdanika.models.architecture.impl.ElementKindImpl;
 
 import org.nasdanika.models.threat.AssetKind;
 import org.nasdanika.models.threat.Threat;
@@ -32,7 +32,7 @@ import org.nasdanika.models.threat.ThreatPackage;
  *
  * @generated
  */
-public class AssetKindImpl extends EObjectImpl implements AssetKind {
+public class AssetKindImpl extends ElementKindImpl implements AssetKind {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -50,16 +50,6 @@ public class AssetKindImpl extends EObjectImpl implements AssetKind {
 	@Override
 	protected EClass eStaticClass() {
 		return ThreatPackage.Literals.ASSET_KIND;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
 	}
 
 	/**
