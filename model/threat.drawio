@@ -1,0 +1,181 @@
+<mxfile compressed="false" host="Electron">
+  <diagram id="76b0db44-f645-4231-bfc6-8383516ddd72" name="threat">
+    <mxGraphModel dx="1911" dy="2019" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="TrustBoundary" link="references/eClassifiers/TrustBoundary/index.html" id="d28a3809-3e3c-497f-b9f3-234e256013d2">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="709.9986102591124" y="-25.001761121375694" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Flow" link="references/eClassifiers/Flow/index.html" id="ea8ee19f-414d-4881-8c01-b7e4b0a9ba6b">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="939.9981860989501" y="-24.993089458918618" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="crosses" link="references/eClassifiers/Flow/references/eStructuralFeatures/crosses/index.html" id="bb96bcba-fad5-41ce-aa13-a62f356aa912">
+          <mxCell edge="1" parent="1" source="ea8ee19f-414d-4881-8c01-b7e4b0a9ba6b" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="d28a3809-3e3c-497f-b9f3-234e256013d2">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Taxonomy" link="references/eClassifiers/Taxonomy/index.html" id="c3fe4614-e63c-4173-9d1b-e6291516c2a8">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1309.998114038603" y="-175" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ThreatModel" link="references/eClassifiers/ThreatModel/index.html" id="2162bdda-5245-4871-af90-37d25db530f6">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1049.9979759613461" y="-270.00258290435437" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="taxonomies" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/taxonomies/index.html" id="87e14dbc-16d2-4368-a817-d647f97165f3">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="c3fe4614-e63c-4173-9d1b-e6291516c2a8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ThreatStatus" link="references/eClassifiers/ThreatStatus/index.html" id="6df5ef5f-8a61-4305-9cdf-9090b8fe7a92">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1310" y="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="b761f2fe-6a6f-4532-9b74-ef8d55609c24" edge="1" parent="1" source="6df5ef5f-8a61-4305-9cdf-9090b8fe7a92" target="6df5ef5f-8a61-4305-9cdf-9090b8fe7a92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Weakness" link="references/eClassifiers/Weakness/index.html" id="f6e380e6-414c-415a-84fa-b0ff645b2446">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1150.0025088756106" y="-25.000368262040183" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Assumption" link="references/eClassifiers/Assumption/index.html" id="1eb52eac-04c6-4381-9893-f88b865d2be8">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1310" y="-270.004663185553" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="assumptions" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/assumptions/index.html" id="4c24887d-482f-4106-b95b-789e8996e303">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="1eb52eac-04c6-4381-9893-f88b865d2be8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Asset" link="references/eClassifiers/Asset/index.html" id="78cee04a-7b8c-4342-b00f-07bf28273e09">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="819.9964673202047" y="-175.00123075288445" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="weaknesses" link="references/eClassifiers/Asset/references/eStructuralFeatures/weaknesses/index.html" id="2f19091c-623a-45b0-b256-15ae0791f71f">
+          <mxCell edge="1" parent="1" source="78cee04a-7b8c-4342-b00f-07bf28273e09" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="f6e380e6-414c-415a-84fa-b0ff645b2446">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="assets" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/assets/index.html" id="8ed8a826-7504-43be-a20b-9788ac4744e8">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="scope" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/scope/index.html" id="5772d722-88a3-493f-a6cc-47582b1a44ae">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="99abbb73-45ed-47be-a72d-8b2d530dc7fa" edge="1" parent="1" source="ea8ee19f-414d-4881-8c01-b7e4b0a9ba6b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="source" link="references/eClassifiers/Flow/references/eStructuralFeatures/source/index.html" id="f989147b-6b04-45a9-b5b1-c0a86c3afa1e">
+          <mxCell edge="1" parent="1" source="ea8ee19f-414d-4881-8c01-b7e4b0a9ba6b" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="destination" link="references/eClassifiers/Flow/references/eStructuralFeatures/destination/index.html" id="9c1005ac-32e8-4893-afed-e4f3b2302da5">
+          <mxCell edge="1" parent="1" source="ea8ee19f-414d-4881-8c01-b7e4b0a9ba6b" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="cf0dd7fa-05b0-4a5b-8f55-fb8bcda09ec1" edge="1" parent="1" source="d28a3809-3e3c-497f-b9f3-234e256013d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="members" link="references/eClassifiers/TrustBoundary/references/eStructuralFeatures/members/index.html" id="70ff86e5-80c9-4612-9386-e951a319106f">
+          <mxCell edge="1" parent="1" source="d28a3809-3e3c-497f-b9f3-234e256013d2" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Threat" link="references/eClassifiers/Threat/index.html" id="f95d32bf-c26e-4097-b9e7-843be71d1b61">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1149.9987912119489" y="-104.99576235076864" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="target" link="references/eClassifiers/Threat/references/eStructuralFeatures/target/index.html" id="9eb8ce3a-c1a8-4319-b62a-4515db71bea2">
+          <mxCell edge="1" parent="1" source="f95d32bf-c26e-4097-b9e7-843be71d1b61" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="78cee04a-7b8c-4342-b00f-07bf28273e09">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="exploits" link="references/eClassifiers/Threat/references/eStructuralFeatures/exploits/index.html" id="14cfa3f2-4159-4961-a1ae-323cd3688fb2">
+          <mxCell edge="1" parent="1" source="f95d32bf-c26e-4097-b9e7-843be71d1b61" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="f6e380e6-414c-415a-84fa-b0ff645b2446">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="children" link="references/eClassifiers/Threat/references/eStructuralFeatures/children/index.html" id="fa1316bc-f96f-468d-9ba0-112d81cfe1e0">
+          <mxCell edge="1" parent="1" source="f95d32bf-c26e-4097-b9e7-843be71d1b61" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1;edgeStyle=orthogonalEdgeStyle;" target="f95d32bf-c26e-4097-b9e7-843be71d1b61">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="threats" link="references/eClassifiers/Asset/references/eStructuralFeatures/threats/index.html" id="4ab7ff74-fdf3-483c-af1c-0ee151995d4a">
+          <mxCell edge="1" parent="1" source="78cee04a-7b8c-4342-b00f-07bf28273e09" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="f95d32bf-c26e-4097-b9e7-843be71d1b61">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ThreatCategory" link="references/eClassifiers/ThreatCategory/index.html" id="18b279c7-f2f8-47d1-87ae-c9565f2f822c">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1309.9958079482515" y="-24.99790064131477" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="children" link="references/eClassifiers/ThreatCategory/references/eStructuralFeatures/children/index.html" id="ea7b65f7-df58-4eed-ad1f-c922d99ef51e">
+          <mxCell edge="1" parent="1" source="18b279c7-f2f8-47d1-87ae-c9565f2f822c" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1;edgeStyle=orthogonalEdgeStyle;" target="18b279c7-f2f8-47d1-87ae-c9565f2f822c">
+            <mxGeometry relative="1" x="-0.0024" y="23" as="geometry">
+              <mxPoint as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="categories" link="references/eClassifiers/Threat/references/eStructuralFeatures/categories/index.html" id="1a1c4455-6b14-4aa3-91c1-b6a7daa7b0da">
+          <mxCell edge="1" parent="1" source="f95d32bf-c26e-4097-b9e7-843be71d1b61" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="18b279c7-f2f8-47d1-87ae-c9565f2f822c">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="categories" link="references/eClassifiers/Taxonomy/references/eStructuralFeatures/categories/index.html" id="a306b2c6-e7d1-4691-87b8-23515fa01dee">
+          <mxCell edge="1" parent="1" source="c3fe4614-e63c-4173-9d1b-e6291516c2a8" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="18b279c7-f2f8-47d1-87ae-c9565f2f822c">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AssetKind" link="references/eClassifiers/AssetKind/index.html" id="8de02092-0919-422f-bbe6-b3ba837d7e97">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="999.9981919329739" y="-174.99923949210347" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="defaultThreats" link="references/eClassifiers/AssetKind/references/eStructuralFeatures/defaultThreats/index.html" id="1f52fa65-924d-4a5a-b7bb-4615c2a49e9e">
+          <mxCell edge="1" parent="1" source="8de02092-0919-422f-bbe6-b3ba837d7e97" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="f95d32bf-c26e-4097-b9e7-843be71d1b61">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="kinds" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/kinds/index.html" id="cba20871-633d-41c2-9d50-f4569c2618e8">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="8de02092-0919-422f-bbe6-b3ba837d7e97">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="ThreatActor" link="references/eClassifiers/ThreatActor/index.html" id="8247a996-01a5-401d-85ab-4e70eec2b454">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="1149.9974856104077" y="-174.99693201608918" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="actors" link="references/eClassifiers/Threat/references/eStructuralFeatures/actors/index.html" id="9ba8a9d0-f40c-4559-b4ee-5f6060702bcb">
+          <mxCell edge="1" parent="1" source="f95d32bf-c26e-4097-b9e7-843be71d1b61" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="8247a996-01a5-401d-85ab-4e70eec2b454">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="actors" link="references/eClassifiers/ThreatModel/references/eStructuralFeatures/actors/index.html" id="149b98e5-2475-457a-8007-30b0ce289d40">
+          <mxCell edge="1" parent="1" source="2162bdda-5245-4871-af90-37d25db530f6" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="8247a996-01a5-401d-85ab-4e70eec2b454">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
