@@ -1,8 +1,5 @@
 import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.threat.capability.ThreatArrayResourceContentsHandlerCapabilityFactory;
 import org.nasdanika.models.threat.capability.ThreatEPackageResourceSetCapabilityFactory;
-import org.nasdanika.models.threat.capability.ThreatResourceContentsHandlerCapabilityFactory;
-import org.nasdanika.models.threat.capability.ThreatResourceFactoryCapabilityFactory;
 
 module org.nasdanika.models.threat {
 	
